@@ -1,6 +1,29 @@
 @import 'libs/bootstrap-reboot.min';
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 170px;
+    height: 53px;
+    background-color: #998675;
+    box-shadow: inset 0px -3px 0px 0px #736357;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
