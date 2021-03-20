@@ -1,0 +1,44 @@
+.tns-slider {
+    display: flex;
+}
+
+.tns-outer {
+    height: 100%;
+}
+
+.tns-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    width: 98px;
+    button {
+        width: 11px;
+        height: 11px;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        border: none;
+        outline: none;
+    }
+}
+
+.tns-nav-active {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 475px;
+    transform: translateX(-50%);
+    left: -150px;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+}
+
+.slick-next {
+    right: -150px;
+    left: auto;
+}

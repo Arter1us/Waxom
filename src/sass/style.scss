@@ -7,11 +7,14 @@
 }
 
 .container {
+    position: relative;
+    height: 100%;
     width: 1170px;
     margin: 0 auto;
 }
 
 .btn {
+    display: block;
     width: 170px;
     height: 53px;
     background-color: #998675;
@@ -23,7 +26,12 @@
     font-weight: 800;
     text-transform: uppercase;
     color: #ffffff;
+    &_center {
+        margin: 0 auto;
+    }
 }
 
 @import 'blocks/header';
 @import 'blocks/promo';
+@import 'blocks/slider';
+@import 'blocks/services';

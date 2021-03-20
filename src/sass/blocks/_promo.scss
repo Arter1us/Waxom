@@ -2,15 +2,19 @@
     height: 100vh;
     background: url('../img/main_bg.jpg') center (center / cover) no-repeat;
     &__wrapper {
+        padding-top: 381px;
+        position: relative;
+    }
+    &__slick {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 381px;
-        width: 589px;
         margin: 0 auto;
+        width: 589px;
     }
     &__title {
+        text-align: center;
         font-family: 'Raleway';
         font-size: 36px;
         line-height: 1.2;
@@ -18,6 +22,7 @@
         color: #ffffff;
     }
     &__subtitle {
+        text-align: center;
         font-family: 'Raleway';
         font-size: 52px;
         line-height: 1.2;
@@ -25,12 +30,14 @@
         color: #ffffff;
     }
     &__descr {
+        text-align: center;
         font-family: 'Montserrat';
         font-size: 16px;
         line-height: 24px;
         font-weight: 300;
         color: #ffffff;
-        text-align: center;
+        margin: 0 auto;
         margin-bottom: 52px;
+        width: 589px;
     }
 }
