@@ -5,10 +5,6 @@ const slider = tns({
     autoplay: false,
     controls: false,
     navPosition: 'bottom',
-    controlsText: [
-        '<img src="../icons/left.svg" alt="left">',
-        '<img src="../icons/right.svg" alt="right">'
-    ]
 });
 
 document.querySelector('.slick-prev').addEventListener('click', () => {

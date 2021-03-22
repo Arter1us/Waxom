@@ -26,12 +26,40 @@
     font-weight: 800;
     text-transform: uppercase;
     color: #ffffff;
+    transition: all 0.2s;
     &_center {
         margin: 0 auto;
     }
+    &:hover {
+        background: #927c68;
+    }
+}
+
+.title {
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: initial;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.description {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #8c8c8c;
+    text-align: center;
+    width: 757px;
+    margin: 0 auto;
 }
 
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/slider';
 @import 'blocks/services';
+@import 'blocks/realization';
+@import 'blocks/aside';
+@import 'blocks/projects';

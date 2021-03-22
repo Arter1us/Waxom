@@ -1,0 +1,27 @@
+.realization {
+    background-color: #fbfaf8;
+    min-height: 700px;
+    padding: 80px 0 0;
+    &__wrapper {
+        position: relative;
+        margin-top: 30px;
+        height: 100%;
+    }
+    &__img {
+        position: absolute;
+        display: block;
+        &_left {
+            left: -32px;
+            top: 82px;
+        }
+        &_center {
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        &_right {
+            right: -32px;
+            top: 82px;
+        }
+    }
+}

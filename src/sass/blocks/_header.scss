@@ -1,9 +1,13 @@
 .header {
+    position: absolute;
+    z-index: 2;
+    top: 40px;
     &__wrapper {
         display: flex;
-        position: absolute;
-        top: 40px;
         align-items: center;
+        &:hover {
+            color: #b09e88;
+        }
     }
 }
 
@@ -12,11 +16,18 @@
     align-items: center;
     margin-right: 219px;
     &__title {
-        font-family: 'Raleway';
-        font-size: 34px;
-        font-weight: 400;
-        letter-spacing: -0.04em;
-        color: #ffffff;
+        a {
+            font-family: 'Raleway';
+            font-size: 34px;
+            font-weight: 400;
+            letter-spacing: -0.04em;
+            color: #ffffff;
+            text-decoration: none;
+            transition: all 0.2s;
+            &:hover {
+                color: #b09e88;
+            }
+        }
     }
 }
 
@@ -40,6 +51,10 @@
             font-weight: 300;
             color: #ffffff;
             text-decoration: none;
+            transition: all 0.2s;
+            &:hover {
+                color: #b09e88;
+            }
         }
     }
 }
@@ -49,6 +64,10 @@
     display: flex;
     justify-content: space-between;
     &__item {
-        height: 24px;
+        cursor: pointer;
+        &:hover path {
+            transition: all 0.2s;
+            fill: #b09e88;
+    }
     }
 }

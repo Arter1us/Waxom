@@ -10,12 +10,20 @@
         align-items: center;
         justify-content: center;
         width: 266px;
+        transition: all 0.2s;
+        &:hover path {
+            transition: all 0.2s;
+            fill: #c7b299;
+        }
         &::after {
             content: '';
             width: 70px;
             height: 3px;
             background-color: #f1eee9;
             margin-top: 30px;
+        }
+        &:hover::after {
+            background-color: #c7b299;
         }
     }
     &__img {
