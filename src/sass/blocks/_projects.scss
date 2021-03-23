@@ -7,10 +7,47 @@
         grid-template-rows: repeat(2, 337px);
         gap: 30px;
     }
+    &__item {
+        &:hover .projects__link{
+            visibility: visible;
+            background-color: rgba(17,17,17,0.7);
+        }
+        &:hover .projects__text {
+            background-color: #362f2d;
+        }
+        &:hover .projects__text::before {
+            border-bottom: 10px solid #362f2d;
+        }
+    }
+    &__img {
+        position: relative;
+    }
+    &__link {
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.1s;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 106px;
+        width: 80px;
+        a {
+            &:hover path {
+                transition: all 0.2s;
+                fill: #c7b299;
+            }
+        }
+    }
     &__text {
         position: relative;
         background-color: #fbfaf8;
         padding: 25px 28px 25px;
+        transition: all 0.1s;
         &::before {
             content: '';
             position: absolute;
@@ -18,6 +55,7 @@
             left: 20px;
             border: 15px solid transparent;
             border-bottom: 10px solid #fbfaf8;
+            transition: all 0.1s;
         }
     }
     &__title {
