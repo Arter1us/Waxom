@@ -1,0 +1,38 @@
+.devices {
+    padding-top: 80px;
+    &__wrapper {
+        display: flex;
+    }
+    &__img {
+        margin-left: 47px;
+    }
+    &__text {
+        margin: 116px 0 0 30px;
+    }
+    &__list {
+        margin-top: 45px;
+        margin-left: 50px;
+        padding-left: 50px;
+        list-style-type: none;
+        li {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                background: url('../icons/arrow.svg');
+                width: 23px;
+                height: 23px;
+                left: -50px;
+                top: 5px;
+            }
+        }
+    }
+}
+
+.lh-32 {
+    line-height: 32px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
