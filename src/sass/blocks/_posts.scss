@@ -1,0 +1,119 @@
+.posts {
+    padding: 80px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 370px);
+        grid-template-rows: repeat(1, 395px);
+        gap: 30px;
+        margin-top: 40px;
+    }
+    &__item {
+        &:hover .posts__day {
+            background-color: #c7b299;
+            transition: all 0.3s;
+        }
+        &:hover .posts__month {
+            background-color: #a48d72;
+            transition: all 0.3s;
+        }
+        &:hover .posts__text {
+            background-color: #362f2d;
+            border: 1px solid #362f2d;
+            border-top: none;
+            transition: all 0.3s;
+        }
+        &:hover .posts__title {
+            color: #c7b299;
+        }
+        &:hover .posts__descr {
+            color: #ffffff;
+        }
+    }
+    &__preview {
+        position: relative;
+        width: 370px;
+        height: 220px;
+    }
+    &__date {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    &__day {
+        height: 35px;
+        padding: 9px 10px 0 10px;
+        background-color: #363636;
+        border-radius: 3px 3px 0 0;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    &__month {
+        height: 25px;
+        padding: 5px 13px 0 13px;
+        background-color: #252525;
+        border-radius: 0 0 3px 3px;
+        font-family: 'Roboto';
+        font-size: 12px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    &__text {
+        border: 1px solid #f8f8f8;
+        border-top: none;
+        background-color: rgba(119,119,119,0.0);
+        padding: 24px;
+    }
+    &__title {
+        font-family: 'Raleway';
+        font-size: 20px;
+        font-weight: 500;
+        color: #555555;
+        line-height: initial;
+        transition: all 0.3s;
+    }
+    &__descr {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 300;
+        color: #8c8c8c;
+        margin-top: 15px;
+        transition: all 0.3s;
+    }
+    &__link {
+        margin-top: 20px;
+        position: relative;
+        a {
+            position: relative;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #c7b299;
+            text-decoration: none;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 5px;
+                right: -25px;
+                border-width: 4px 8px;
+                border-style: solid;
+                border-color: transparent transparent transparent #c7b299;
+            }
+        }
+    }
+    &__arrows {
+        margin: 0 auto;
+        width: 52px;
+        display: flex;
+        justify-content: space-between;
+        svg {
+            &:hover path {
+                fill: #c7b299;
+            }
+        }
+    }
+}
